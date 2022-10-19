@@ -6,10 +6,6 @@ const btnSend = document.querySelector(".btn-kirim");
 const btnLoading = document.querySelector(".btn-loading");
 const myAlert = document.querySelector(".my-alert");
 
-const nameValue = document.getElementById("name");
-const email = document.getElementById("email");
-const message = document.getElementById("message");
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 

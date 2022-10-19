@@ -301,7 +301,7 @@
           .then((response) => console.log("Success!", response))
           .catch((error) => console.error("Error!", error.message));
 
-        document.forms["submit-to-google-sheet"].reset();
+        document.forms["submit-to-google-sheet"] = "";
       });
     </script>
   </body>

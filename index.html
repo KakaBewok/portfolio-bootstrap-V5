@@ -221,18 +221,28 @@
         </div>
         <div class="row justify-content-center">
           <div class="col-md-6">
-            <form>
+            <form name="submit-to-google-sheet">
               <div class="mb-3">
                 <label for="name" class="form-label">Name</label>
-                <input type="text" class="form-control" id="name" />
+                <input name="name" type="text" class="form-control" id="name" />
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" />
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control"
+                  id="email"
+                />
               </div>
               <div class="mb-3">
                 <label for="message" class="form-label">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  id="message"
+                  rows="3"
+                ></textarea>
               </div>
               <button type="submit" class="btn btn-primary">Send</button>
             </form>
@@ -279,5 +289,18 @@
     <!-- FOOTER END -->
 
     <script src="./bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwPLCFXkSq9EMEAArImeI7jriFiCgmJ760LulDoval1NbSUfn9KLwYHGQWiTNxHrC9aTw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>

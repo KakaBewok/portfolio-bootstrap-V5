@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.css" />
     <!-- CUSTOM CSS -->
+    <!-- aos library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="my_style.css" />
     <link rel="icon" href="./img/pas_foto_red.jpg" />
     <title>Noprizal - Portfolio Website</title>
@@ -85,7 +87,12 @@
           </div>
         </div>
         <div class="row justify-content-center fs-5 text center">
-          <div class="col-md-5">
+          <div
+            class="col-md-5"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perspiciatis nemo tempore ullam accusamus iure minima, architecto
@@ -93,7 +100,12 @@
               rerum? Tempora cum qui nemo, rem veniam fugit sequi voluptates
             </p>
           </div>
-          <div class="col-md-5">
+          <div
+            class="col-md-5"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perspiciatis nemo tempore ullam accusamus iure minima, architecto
@@ -123,7 +135,11 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-4 mb-4">
+          <div
+            class="col-md-4 mb-4"
+            data-aos="flip-left"
+            data-aos-duration="950"
+          >
             <div class="card">
               <img
                 src="./img/projects/project_1.jpg"
@@ -138,7 +154,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div
+            class="col-md-4 mb-4"
+            data-aos="flip-left"
+            data-aos-duration="950"
+            data-aos-delay="100"
+          >
             <div class="card">
               <img
                 src="./img/projects/project_2.jpg"
@@ -153,7 +174,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div
+            class="col-md-4 mb-4"
+            data-aos="flip-left"
+            data-aos-duration="950"
+            data-aos-delay="200"
+          >
             <div class="card">
               <img
                 src="./img/projects/project_3.jpg"
@@ -168,7 +194,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div
+            class="col-md-4 mb-4"
+            data-aos="flip-left"
+            data-aos-duration="950"
+            data-aos-delay="300"
+          >
             <div class="card">
               <img
                 src="./img/projects/project_4.jpg"
@@ -183,7 +214,12 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div
+            class="col-md-4 mb-4"
+            data-aos="flip-left"
+            data-aos-duration="950"
+            data-aos-delay="400"
+          >
             <div class="card">
               <img
                 src="./img/projects/project_5.jpg"
@@ -210,6 +246,68 @@
       </svg>
     </section>
     <!-- PROJECTS END -->
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <!-- class img-fluid untuk membuat gambar menjadi responsive -->
+            <img
+              src="./img/gallery/thumb/1.jpg"
+              alt="gambar 1"
+              class="img-fluid gallery-img"
+            />
+          </div>
+          <div class="col-md-3">
+            <!-- class img-fluid untuk membuat gambar menjadi responsive -->
+            <img
+              src="./img/gallery/thumb/2.jpg"
+              alt="gambar 2"
+              class="img-fluid gallery-img"
+            />
+          </div>
+          <div class="col-md-3">
+            <!-- class img-fluid untuk membuat gambar menjadi responsive -->
+            <img
+              src="./img/gallery/thumb/3.jpg"
+              alt="gambar 3"
+              class="img-fluid gallery-img"
+            />
+          </div>
+          <div class="col-md-3">
+            <!-- class img-fluid untuk membuat gambar menjadi responsive -->
+            <img
+              src="./img/gallery/thumb/4.jpg"
+              alt="gambar 4"
+              class="img-fluid gallery-img"
+            />
+          </div>
+          <div class="col-md-3">
+            <!-- class img-fluid untuk membuat gambar menjadi responsive -->
+            <img
+              src="./img/gallery/thumb/5.jpg"
+              alt="gambar 5"
+              class="img-fluid gallery-img"
+            />
+          </div>
+          <div class="col-md-3">
+            <!-- class img-fluid untuk membuat gambar menjadi responsive -->
+            <img
+              src="./img/gallery/thumb/2.jpg"
+              alt="gambar 6"
+              class="img-fluid gallery-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- GALLERY END-->
 
     <!-- CONTACT -->
     <section id="contact">
@@ -327,6 +425,10 @@
     <!-- FOOTER END -->
 
     <script src="./bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script>
+      
+    </script> -->
     <script src="./my_script.js"></script>
   </body>
 </html>

@@ -1,3 +1,18 @@
+const galleryImage = document.querySelectorAll(".gallery-img");
+
+// menambahkan properti aos ke setiap .gallery-img
+galleryImage.forEach((img, i) => {
+  img.dataset.aos = "fade-down";
+  img.dataset.aosDelay = i * 100;
+  img.dataset.aosDuration = 1000;
+});
+
+// config AOS
+AOS.init({
+  // hanya menampilkan sekali saat direload
+  once: true,
+});
+
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbwlewHjaAOh8hL6Njz8OxxFB3dK8P4023XwNd_axQ2bpg61i5ipns1mGmmo5FwYG8e0Eg/exec";
 const form = document.forms["submit-to-google-sheet"];

@@ -1,5 +1,5 @@
+// MENAMBAHKAN ANIMASI DENGAN AOS LIBRARY
 const galleryImage = document.querySelectorAll(".gallery-img");
-
 // menambahkan properti aos ke setiap .gallery-img
 galleryImage.forEach((img, i) => {
   img.dataset.aos = "fade-down";
@@ -13,6 +13,7 @@ AOS.init({
   once: true,
 });
 
+// MENGINPUT DATA CONTACT KE GOOGLESHEET
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbwlewHjaAOh8hL6Njz8OxxFB3dK8P4023XwNd_axQ2bpg61i5ipns1mGmmo5FwYG8e0Eg/exec";
 const form = document.forms["submit-to-google-sheet"];

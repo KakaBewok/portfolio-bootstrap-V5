@@ -67,7 +67,7 @@
         class="rounded-circle img-thumbnail"
       />
       <h1 class="display-5">Noprizal</h1>
-      <p class="lead"></p>
+      <p class="lead">Front-End Web Developer</p>
       <!-- waves -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
@@ -429,15 +429,19 @@
     <script src="./bootstrap-5.2.2-dist/js/bootstrap.js"></script>
     <script src="./my_script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <!-- CDN mengimport animasi text berjalan -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
     <script>
-      // register plugin
+      // register plugin text berjalan
       gsap.registerPlugin(TextPlugin);
       // animasi bio profile
-      gsap.to(".lead", {
-        duration: 1.6,
-        delay: 1.5,
-        text: "Front-End Web Developer",
+      gsap.from(".lead", {
+        // text: "Front-End Web Developer",
+        duration: 1,
+        delay: 0.5,
+        x: -50,
+        opacity: 0,
+        ease: "back",
       });
       // animasi untuk foto profile
       gsap.from(".jumbotron img", {

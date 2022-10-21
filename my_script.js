@@ -2,7 +2,7 @@
 const galleryImage = document.querySelectorAll(".gallery-img");
 // menambahkan properti aos ke setiap .gallery-img
 galleryImage.forEach((img, i) => {
-  img.dataset.aos = "fade-down";
+  img.dataset.aos = "fade-up";
   img.dataset.aosDelay = i * 100;
   img.dataset.aosDuration = 1000;
 });
@@ -44,10 +44,4 @@ form.addEventListener("submit", (e) => {
       console.log("Success!", response);
     })
     .catch((error) => console.error("Error!", error.message));
-});
-
-gsap.from(".jumbotron img", {
-  duration: 1,
-  y: -100,
-  opacity: 0,
 });

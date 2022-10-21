@@ -45,3 +45,9 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
+
+gsap.from(".jumbotron img", {
+  duration: 1,
+  y: -100,
+  opacity: 0,
+});

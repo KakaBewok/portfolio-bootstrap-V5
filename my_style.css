@@ -1,7 +1,9 @@
-#home {
-    width: 100%;
+.container {
+    overflow: hidden;
 }
-
+.navbar {
+    overflow: hidden;
+}
 .jumbotron {
      padding-top: 8rem;
      background-color: #e2edff;
@@ -17,4 +19,72 @@ section {
 }
 #gallery .row > * {
     padding: 0;
+}
+/* my keyboard section */
+.keyboard-box {
+    position: relative;
+    background-color: #0c6efd;
+    border-radius: 10px;
+    height: 500px;
+    overflow: hidden;
+}
+.keyboard-box::before {
+    content: 'MY';
+    position: absolute;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    top: 38px;
+    left: -100px;
+    transition: .5s;
+    opacity: 0;
+}
+.keyboard-box::after {
+    content: 'KEYBOARD';
+    position: absolute;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    top: 350px;
+    left: 455px;
+    transition: .5s;
+    opacity: 0;
+}
+.keyboard-box:hover::before{
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: .2;
+}
+.keyboard-box:hover::after{
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: .2;
+}
+.keyboard-name {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    opacity: 0;
+    transition: .5s;
+}
+.keyboard-box:hover .keyboard-name {
+    top: 15px;
+    opacity: 1;
+}
+.keyboard-detail-button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: .5s;
+}
+.keyboard-box:hover .keyboard-detail-button {
+    bottom: 15px;
+    opacity: 1;
 }

@@ -32,10 +32,10 @@ section {
     content: 'MY';
     position: absolute;
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     font-style: italic;
-    top: 38px;
+    top: 58px;
     left: -100px;
     transition: .5s;
     opacity: 0;
@@ -44,7 +44,7 @@ section {
     content: 'KEYBOARD';
     position: absolute;
     color: #fff;
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     font-style: italic;
     top: 350px;
@@ -85,6 +85,16 @@ section {
     transition: .5s;
 }
 .keyboard-box:hover .keyboard-detail-button {
-    bottom: 15px;
+    bottom: 23px;
     opacity: 1;
+}
+.keyboard-img {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition: .5s;
+}
+.keyboard-box:hover .keyboard-img {
+    transform: translate(-50%, 0) scale(1.1) rotate(10deg);
 }

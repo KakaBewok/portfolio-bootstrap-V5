@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./bootstrap-5.2.2-dist/css/bootstrap.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="my_style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="icon" href="./img/pas_foto_red.jpg" />
     <title>Noprizal - Portfolio Website</title>
   </head>
@@ -306,10 +306,27 @@
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 col-lg-4 mb-3">
+            <div class="col-md-6 col-lg-4 mb-4">
               <div class="keyboard-box">
                 <h4 class="keyboard-name">Keychron</h4>
-                <img src="./img/keyboards/1-.png" alt="" class="keyboard-img" />
+                <img
+                  src="./img/keyboards/dua fix.png"
+                  alt=""
+                  class="keyboard-img"
+                />
+                <a href="#" class="btn btn-light keyboard-detail-button"
+                  >Show Details</a
+                >
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <div class="keyboard-box">
+                <h4 class="keyboard-name">Keychron</h4>
+                <img
+                  src="./img/keyboards/satu fix.png"
+                  alt=""
+                  class="keyboard-img"
+                />
                 <a href="#" class="btn btn-light keyboard-detail-button"
                   >Show Details</a
                 >
@@ -532,14 +549,13 @@
     <!-- FOOTER END -->
 
     <script src="./bootstrap-5.2.2-dist/js/bootstrap.js"></script>
+    <script src="./my_script.js" type="module"></script>
 
-    <script src="./vanilla-tilt.min.js"></script>
+    <script type="text/javascript" src="vanilla-tilt.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
     <!-- CDN mengimport animasi text berjalan -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
-
-    <script src="./my_script.js" type="module"></script>
 
     <script>
       // register plugin text berjalan
@@ -572,6 +588,15 @@
         opacity: 0,
         ease: "back",
       });
+
+      // titl.js
+      VanillaTilt.init(document.querySelectorAll(".keyboard-box"), {
+        max: 25,
+        speed: 400,
+      });
+
+      // //It also supports NodeList
+      // VanillaTilt.init(document.querySelectorAll(".your-element"));
     </script>
   </body>
 </html>

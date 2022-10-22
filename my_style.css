@@ -87,7 +87,7 @@ section {
     transform: translate3d(-50%, 0, 90px);
 }
 .keyboard-box:hover .keyboard-detail-button {
-    bottom: 23px;
+    bottom: 35px;
     opacity: 1;
 }
 .keyboard-img {

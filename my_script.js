@@ -3,8 +3,8 @@ const galleryImage = document.querySelectorAll(".gallery-img");
 // menambahkan properti aos ke setiap .gallery-img
 galleryImage.forEach((img, i) => {
   img.dataset.aos = "fade-up";
-  img.dataset.aosDelay = i * 100;
-  img.dataset.aosDuration = 800;
+  img.dataset.aosDelay = i * 80;
+  img.dataset.aosDuration = 700;
 });
 
 // config AOS
